@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Interactive Quiz</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <style>
+
+
+            .background {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+              font-family: "Poppins", sans-serif;
+            }
+            body {
+              background-color: #f4f8fc;
+              padding: 40px;
+              color: #2c2c2c;
+              font-family: "Poppins", sans-serif;
+            }
+            .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+                margin: auto;
+            }
+            .left-section {
+              max-width: 60%;
+            }
+            .logo {
+              display: flex;
+              align-items: center;
+              gap: 30px;
+              margin-bottom: 5px;
+              margin-top: 1px;
+            }
+            .icon {
+              width: 60px;
+              height: 60px;
+              position: right;
+            }
+            .pagename {
+              font-size: 35px;
+              color: #5a66d4;
+              font-weight: 700;
+            }
+            h2 {
+              font-size: 45px;
+              margin-bottom: 16px;
+              margin-top: 5px;
+              font-weight: 700;
+            }
+            h1 {
+              font-size: 45px;
+              font-weight: 700;
+              color: #5a66d4;
+              margin-bottom: 20px;
+            }
+            .description {
+              font-size: 25px;
+              color: #555;
+              margin-bottom: 40px;
+            }
+            .buttons {
+              padding: 20px 60px;
+              height:min-content;
+              font-size: 16px;
+              border-radius: 20px;
+              font-weight: 600;
+              cursor: pointer;
+              border: none;
+              display: flex;
+              gap: 15px;
+            }
+            .start {
+              background-color: #5a66d4;
+              color: #fff;
+              padding: 20px 60px;
+              height:min-content;
+              border-radius: 20px;
+              
+            }
+            .start:hover {
+              background-color: #3f4db5;
+            }
+            .manage {
+              background-color: #ffffff;
+              color: #5a66d4;
+              border: 1px solid #d1d1d1;
+              padding: 20px 60px;
+              border-radius: 20px;   
+            }
+            .manage:hover {
+              background-color: #dddddd;
+            }
+            .brain-image {
+                width: 300px;
+                height: 300px;
+                margin-top: 70px;
+                border-radius: 20px;
+                background-color: #5a66d4;
+                padding: 60px;
+                }
+
+            </style>
+        </head>
+<body> 
+    <div class="container">
+        <div class="left-section">
+         
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="icon">
+            <h1 class="pagename">WEBSITE NAME</h1>
+        </div>
+          
+          <h2>Test Your Knowledge with 
+          <span style="color: #3f4db5;">Interactive Quizzes</h2></span>
+          <p class="description">
+            Challenge yourself with a wide range of
+            questions. Create custom questions 
+            use our templates to get started quickly.
+          </p>
+          <div class="buttons">
+            <a href="start.html" button class="start" style="text-decoration: none;">Start Quiz</a>
+            <a href="manager.html" button class="manage" style="text-decoration: none;">Manage Questions</a>
+          </div>
+        </div>
+
+        <div class="right-section">
+          <img src="brain.png" alt="Brain Reading" class="brain-image"/>
+        </div>
+      </div>
+
+
+</body>
+</html>
