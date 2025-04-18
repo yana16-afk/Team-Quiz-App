@@ -124,52 +124,59 @@
   </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-let currentQuestionIndex = 0;
-let score = 0;
-let questions = [];
-
-function loadQuestion(index) {
-  const q = questions[index];
-  $('#current-question').text(index + 1);
-  $('#total-questions').text(questions.length);
-  $('#question-text').text(q.question);
-
-  $('#options-container').html(q.options.map((opt, i) => `
-    <div class="option" data-index="${i}">${String.fromCharCode(65+i)}. ${opt}</div>
-  `).join(''));
-
-  updateProgress();
-}
-
-function updateProgress() {
-  const progress = (currentQuestionIndex / questions.length) * 100;
-  $('#progress-bar-fill').css('width', progress + '%');
-}
-
-$(document).ready(() => {
-  $.getJSON('questions.json', data => {
-    questions = data;
-    loadQuestion(currentQuestionIndex);
-  });
-
-  $('#options-container').on('click', '.option', function () {
-    $('.option').removeClass('selected');
-    $(this).addClass('selected');
-  });
-
-  $('#next-button').on('click', function () {
-    const selected = $('.option.selected').data('index');
-    if (selected === undefined) return alert("Please select an option.");
-    if (selected == questions[currentQuestionIndex].answer) score++;
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-      loadQuestion(currentQuestionIndex);
-    } else {
-      $('#quiz-container').html(`<h2>You scored ${score} out of ${questions.length}</h2>`);
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let questions = [];
+    let userAnswers = [];
+    
+    function loadQuestion(index) {
+      const q = questions[index];
+      $('#current-question').text(index + 1);
+      $('#total-questions').text(questions.length);
+      $('#question-text').text(q.question);
+    
+      $('#options-container').html(q.options.map((opt, i) => `
+        <div class="option" data-index="${i}">${String.fromCharCode(65 + i)}. ${opt}</div>
+      `).join(''));
+    
+      updateProgress();
     }
-  });
-});
-</script>
+    
+    function updateProgress() {
+      const progress = (currentQuestionIndex / questions.length) * 100;
+      $('#progress-bar-fill').css('width', progress + '%');
+    }
+    
+    $(document).ready(() => {
+      $.getJSON('questions.json', data => {
+        questions = data;
+        loadQuestion(currentQuestionIndex);
+      });
+    
+      $('#options-container').on('click', '.option', function () {
+        $('.option').removeClass('selected');
+        $(this).addClass('selected');
+      });
+    
+      $('#next-button').on('click', function () {
+        const selected = $('.option.selected').data('index');
+        if (selected === undefined) return alert("Please select an option.");
+        
+        // Store the selected answer
+        userAnswers.push(selected);
+    
+        if (selected == questions[currentQuestionIndex].answer) score++;
+        currentQuestionIndex++;
+        
+        if (currentQuestionIndex < questions.length) {
+          loadQuestion(currentQuestionIndex);
+        } else {
+          // Redirect to results page with score, total, and user answers
+          const correctAnswers = questions.map(q => q.answer);
+          window.location.href = `results.html?score=${score}&total=${questions.length}&answers=${JSON.stringify(userAnswers)}&correctAnswers=${JSON.stringify(correctAnswers)}`;
+        }
+      });
+    });
+    </script>    
 </body>
-
 </html>
