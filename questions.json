@@ -1,0 +1,17 @@
+[
+  {
+    "question": "Which of the following best defines a phishing attack?",
+    "options": ["A fraudulent attempt to steal sensitive information", "A method of securing communication", "An attack on computer hardware", "None of the above"],
+    "answer": 0
+  },
+  {
+    "question": "What is the primary goal of encryption?",
+    "options": ["Protecting sensitive data", "Making data more accessible", "Compressing data for storage", "None of the above"],
+    "answer": 0
+  },
+  {
+    "question": "A strong password policy includes all the following EXCEPT:",
+    "options": ["Using special characters", "Including the user's name", "Using numbers and letters", "Changing passwords regularly"],
+    "answer": 1
+  }
+]
