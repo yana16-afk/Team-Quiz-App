@@ -261,11 +261,9 @@
     const userAnswers = JSON.parse(urlParams.get('answers'));
 
     $(document).ready(() => {
-      // Fetch questions from questions.json
       $.getJSON('questions.json', (questions) => {
         const correctAnswers = questions.map(q => q.answer);
 
-        // Display result information
         const correct = score;
         const incorrect = total - correct;
         const accuracy = (correct / total) * 100;
@@ -276,7 +274,6 @@
         $('#incorrect-value').text(incorrect);
         $('#accuracy-value').text(accuracy.toFixed(2) + '%');
 
-        // Display the answers for each question
         const answerContainer = $('#answer-container');
         questions.forEach((q, index) => {
           const userAnswer = userAnswers[index];
@@ -284,11 +281,9 @@
           const userAnswerText = q.options[userAnswer];
           const correctAnswerText = q.options[correctAnswer];
 
-          // Create a question block
           const questionBlock = $('<div>').addClass('answer-item');
           questionBlock.append(`<p class="question"><strong>Question:</strong> ${q.question}</p>`);
 
-          // Display the options
           const optionsContainer = $('<div>').addClass('options-container');
           q.options.forEach((opt, i) => {
             const option = $('<div>')
@@ -297,12 +292,10 @@
               .css('padding', '5px');
 
             if (i === userAnswer) {
-              // Highlight the user's selected answer in green
               option.addClass('selected');
             }
 
             if (i === correctAnswer) {
-              // Add "Correct answer" label below the question
               questionBlock.append(`<p class="correct-answer"><strong>Correct answer:</strong> ${correctAnswerText}</p>`);
             }
 
@@ -317,7 +310,6 @@
             optionsContainer.append(option);
           });
 
-          // Append the question and options to the container
           questionBlock.append(optionsContainer);
           answerContainer.append(questionBlock);
         });

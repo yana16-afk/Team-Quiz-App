@@ -171,7 +171,6 @@
         if (currentQuestionIndex < questions.length) {
           loadQuestion(currentQuestionIndex);
         } else {
-          // Redirect to results page with score, total, and user answers
           const correctAnswers = questions.map(q => q.answer);
           window.location.href = `results.html?score=${score}&total=${questions.length}&answers=${JSON.stringify(userAnswers)}&correctAnswers=${JSON.stringify(correctAnswers)}`;
         }
