@@ -13,5 +13,140 @@
     "question": "A strong password policy includes all the following EXCEPT:",
     "options": ["Using special characters", "Including the user's name", "Using numbers and letters", "Changing passwords regularly"],
     "answer": 1
+  },
+  {
+    "question": "When a user is required to use a fingerprint to unlock their smartphone, which core quality of Information Assurance is primarily being demonstrated?",
+    "options": ["Authentication", "Confidentiality", "Integrity", "Non-repudiation"],
+    "answer": 0
+  },
+  {
+    "question": "Which set of strategies is most effective in maintaining data integrity in an information system?",
+    "options": ["Anti-virus software, data backups, and user policies", "Firewalls, encryption, and access controls", "Monitoring systems, patch management, and system updates", "Spam filters, network analysis, and data compression"],
+    "answer": 0
+  },
+  {
+    "question": "A company is setting up a disaster recovery plan for their critical web server. Which strategy would best ensure continuous availability even if the primary server fails due to a hardware issue?",
+    "options": ["Creating user policies to educate employees on system usage", "Implementing nightly backup systems to restore data after a failure occurs", "Installing a firewall to protect against unauthorized access", "Setting up redundant servers that automatically take over in case the primary server fails"],
+    "answer": 3
+  },
+  {
+    "question": "If an organization requires a secure authentication method that is portable and does not rely solely on memorized information, which option would be most suitable?",
+    "options": ["A combination of Usernames and Passwords with Biometrics", "Biometrics", "Tokens and Smart Cards", "Usernames and Passwords"],
+    "answer": 2
+  },
+  {
+    "question": "Which technique ensures that sensitive information is protected during both storage and transmission by converting it into an unreadable format that only authorized individuals can decode?",
+    "options": ["Access Controls", "Encryption", "User Education", "Firewalls"],
+    "answer": 1
+  },
+  {
+    "question": "What is the main benefit of implementing nonrepudiation practices in information systems?",
+    "options": ["It prevents unauthorized access to sensitive data", "It ensures continuous system availability", "It prevents someone from denying completing an action by providing verifiable proof of the event", "It protects against malware infections"],
+    "answer": 2
+  },
+  {
+    "question": "Which threat category would best describe a situation where a company loses revenue due to decreased demand for their product after a competitor introduces a similar but technologically advanced product?",
+    "options": ["Competitive Threats", "Economic Threats", "Regulatory Threats", "Technological Disruptions"],
+    "answer": 0
+  },
+  {
+    "question": "A Philippine company is experiencing reduced IT budgets due to an ongoing recession. Which type of threat does this scenario represent and what is the most appropriate mitigation strategy?",
+    "options": ["Competitive threat; mitigation involves enhancing product offerings and increasing market spending", "Economic threat; mitigation involves diversifying funding sources and optimizing existing resources", "Regulatory threat; mitigation involves strict compliance with new data protection laws", "Technological threat; mitigation involves rapid adoption of innovative network technologies"],
+    "answer": 1
+  },
+  {
+    "question": "A company is preparing to implement a new data analytics tool to enhance its business operations. How should the company address both regulatory and technological threats related to this implementation?",
+    "options": ["Delay investing in new technology until all regulatory changes are fully implemented, postponing necessary upgrades", "Focus solely on upgrading hardware without considering any changes in legal regulations", "Maintain current systems and policies without implementing any upgrades or monitoring new regulations", "Stay informed about legal updates and compliance requirements while investing in modern technology and phasing out obsolete systems"],
+    "answer": 3
+  },
+  {
+    "question": "If you discover a malicious code that automatically spreads across a network by replicating itself without user intervention, which type of malware is most likely responsible?",
+    "options": ["Trojan", "Virus", "Worm", "Ransomware"],
+    "answer": 2
+  },
+  {
+    "question": "If an organization identifies a potential insider threat, which combination of mitigation measures would be most effective?",
+    "options": ["Conducting background checks and implementing strict access controls", "Implementing firewalls and antivirus software to prevent external attacks", "Increasing surveillance cameras without background checks or access restrictions", "Launching a general cybersecurity awareness campaign without restricting access"],
+    "answer": 0
+  },
+  {
+    "question": "If a school experiences a data breach where a student gains unauthorized access to the principal's account by exploiting a weak password protection system, which type of system vulnerability does this scenario best represent?",
+    "options": ["Broken access control", "Broken authentication", "Insider threats", "System failure"],
+    "answer": 1
+  },
+  {
+    "question": "A security researcher notices an unusual amount of network traffic being sent to a server from various external sources. Upon investigation, they discover that unauthorized users are using specialized software to capture data packets as they travel across the network without modifying any of the data. Which type of attack is being executed?",
+    "options": ["Active attack", "Distributed Denial of Service (DDoS) attack", "Passive attack", "Ransomware attack"],
+    "answer": 2
+  },
+  {
+    "question": "A user receives an email claiming to be from their bank asking for their password, and upon clicking the link, malware is secretly installed on their device; which deliberate software attack vector is this an example of?",
+    "options": ["Drive-by Downloads", "Exploit Kits", "Phishing", "Social Engineering"],
+    "answer": 2
+  },
+  {
+    "question": "A school network administrator notices that several computers are exhibiting slow performance and increased network traffic without any user action. Which type of malware is most likely responsible for this activity?",
+    "options": ["Adware", "Spyware", "Viruses", "Worms"],
+    "answer": 3
+  },
+  {
+    "question": "Why is it particularly challenging for traditional antivirus software to detect polymorphic threats?",
+    "options": ["Because they are disguised as legitimate software that antivirus systems cannot differentiate", "Because they are immediately detected by advanced signature analysis due to their uniform structure", "Because they are programmed to erase themselves immediately after execution", "Because they change their code each time they replicate, making them undetectable by fixed signature-based methods"],
+    "answer": 3
+  },
+  {
+    "question": "If you receive an email that appears to be from your bank asking you to update your login credentials but you're unsure of its authenticity, what should be your best course of action?",
+    "options": ["Contact your bank directly via phone or their official website to verify the email's authenticity", "Forward the email to a friend who works in IT to check its authenticity without contacting your bank", "Ignore the email if you don't recognize the sender since banks rarely ask for login updates online", "Update your login credentials immediately through the link provided in the email to maintain security"],
+    "answer": 0
+  },
+  {
+    "question": "An organization in the Philippines is planning to implement multiple strategies to ensure continuous internet service during frequent power outages and unstable connections; which combination of mitigation methods best addresses these challenges?",
+    "options": ["Creating disaster recovery plans, setting up redundant systems, and relying solely on manual monitoring", "Developing disaster recovery plans, establishing redundant systems, and depending on external support contacts", "Establishing Service Level Agreements (SLAs), implementing redundant systems, and using monitoring tools", "Negotiating Service Level Agreements (SLAs), implementing incident response plans, and using local backup generators"],
+    "answer": 2
+  },
+  {
+    "question": "During a long-scheduled blackout in the Philippines, what is the most effective mitigation strategy to maintain continuous internet service for your home?",
+    "options": ["Postpone all online activities until the scheduled blackout ends", "Rely on a generator to keep all electrical devices running at home", "Use a UPS to power your internet modem during the blackout", "Use mobile data or switch to another internet provider"],
+    "answer": 3
+  },
+  {
+    "question": "In the context of combating espionage and trespass in information systems, which of the following scenarios best illustrates phreaking?",
+    "options": ["Accessing a bank account without permission using stolen login credentials", "Entering a secure building by impersonating a security guard to gather sensitive data", "Gathering personal information by watching someone enter their ATM PIN over their shoulder", "Using a stolen phone access code to make free international calls from a landline"],
+    "answer": 3
+  },
+  {
+    "question": "A young Filipino using online banking receives a notification of unusual activity on their account. What combination of protective measures would best address the espionage threats described in the study material?",
+    "options": ["Antivirus software, GPS tracking, and data encryption", "Biometric authentication, webcam covers, and internet firewalls", "Strong passwords, privacy screens, and monitoring system logs", "Two-factor authentication, automatic software updates, and password managers"],
+    "answer": 2
+  },
+  {
+    "question": "If a company in the Philippines is primarily concerned about power outages and communication failures during typhoons, which mitigation strategy would be most effective?",
+    "options": ["Backup power and secure communication lines", "Elevate equipment and use waterproof covers", "Implement data replication and offsite backup strategies", "Secure hardware and build earthquake-resistant buildings"],
+    "answer": 0
+  },
+  {
+    "question": "A company in a flood-prone area is upgrading its server room; what would be the most effective combination of mitigation strategies to protect its information systems?",
+    "options": ["Elevating equipment and using waterproof covers", "Implementing earthquake-resistant buildings and installing emergency power supplies", "Purchasing fire casualty insurance and using smoke detectors", "Using lightning surge protectors and installing backup generators"],
+    "answer": 0
+  },
+  {
+    "question": "Which mitigation strategy is most effective in protecting an IT system against a potential tsunami?",
+    "options": ["Build facilities away from landslide areas", "Elevate data centers", "Reinforce building structures", "Use erosion control measures"],
+    "answer": 1
+  },
+  {
+    "question": "An electronics technician observes that a desktop computer is frequently shutting down due to overheating. Which strategy is MOST appropriate for this issue?",
+    "options": ["Employing anti-static mats under the equipment", "Installing additional cooling fans without cleaning the dust accumulation", "Regular cleaning of the computer components and installing dust filters", "Using an ESD wrist strap during equipment handling"],
+    "answer": 2
+  },
+  {
+    "question": "If a malicious program is discovered propagating automatically across a network using vulnerabilities in the system without any user interaction, which type of malicious code is it most likely to be?",
+    "options": ["Adware", "Trojans", "Viruses", "Worms"],
+    "answer": 3
+  },
+  {
+    "question": "In a scenario where an organization's security team is struggling to detect a network-spreading worm, which characteristic of polymorphic worms would most likely be responsible for this difficulty?",
+    "options": ["Both types of worms depend on user intervention to initiate their propagation, making them hard to trace", "Multivector worms use multiple attack vectors, complicating network monitoring", "Polymorphic worms alter their code with each instance, complicating signature-based detection", "Polymorphic worms maintain a static code structure, but spread through multiple channels"],
+    "answer": 2
   }
 ]
